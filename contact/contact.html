@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>contactform</title>
+		<link rel="stylesheet" href="contact.css">
+	</head>
+	<body>
+	<header>
+		<h1 class="contactform">Contact</h1>
+	</header>
+
+	<form action="your-server-side-script.php" method="POST">
+		<div class="form-row">
+		  <div class="form-label">
+			<label for="name">お名前</label>
+			<span>必須</span>
+		  </div>
+		  <input type="text" id="name" name="name" placeholder="例) 山田 太朗" required>
+		</div>
+		<div class="form-row">
+		  <div class="form-label">
+			<label for="email">メールアドレス:</label>
+			<span>必須</span>
+		  </div>
+		  <input type="email" id="email" name="email" placeholder="例) abcd@xyz.com" required>
+		</div>
+		<div class="form-row">
+		  <div class="form-label">
+			<label for="message">お問い合わせ内容</label>
+			<span>必須</span>
+		  </div>
+		  <textarea id="message" name="message" rows="5"placeholder="お問い合わせ内容をこちらにご記入ください" required></textarea>
+		</div>
+		<div class="buttonform">
+		  <button type="submit">送信</button>
+		</div>
+	  </form>
+	</body>
+</html>
