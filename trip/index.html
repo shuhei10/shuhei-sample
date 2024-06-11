@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>京都の観光名所と神社</title>
+</head>
+<body>
+    <div class="container">
+        <div class="video-content-container">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="./picture/IMG_5381.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content-container">
+                <header>
+                    <h1>京都の観光名所と神社</h1>
+                    <div class="menu-container">
+                        <div class="hamburger-menu" onclick="toggleMenu()">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <span class="menu-text">MENU</span>
+                    </div>
+                </header>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">ホームへ</a></li>
+                        <li><a href="./kihune/kihune.html">貴船神社</a></li>
+                        <li><a href="./rurikouin/rurikouin.html">瑠璃光院</a></li>
+                        <li><a href="./kinkakuji/kinkakuji.html">金閣寺</a></li>
+                        <li><a href="./ginkauji/ginkakuji.html">銀閣寺</a></li>
+                        <li><a href="./kenninji/kenninji.html">建仁寺</a></li>
+                        <li><a href="./ryouanji/ryouanji.html">龍安寺</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="slider">
+            <button class="prev" onclick="prevSlide()">‹</button>
+            <div class="slides-container">
+                <div class="slide">
+                    <a href="./kihune/kihune.html">
+                        <img src="./picture/IMG_5373.jpeg" alt="貴船神社">
+                        <p>貴船神社</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./rurikouin/rurikouin.html">
+                        <img src="./picture/IMG_5383.jpeg" alt="瑠璃光院">
+                        <p>瑠璃光院</a>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./kinkakuji/kinkakuji.html">
+                        <img src="./picture/IMG_5415.jpeg" alt="金閣寺">
+                        <p>金閣寺</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./ginkauji/ginkakuji.html">
+                        <img src="./picture/IMG_5417.jpeg" alt="銀閣寺">
+                        <p>銀閣寺</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./kenninji/kenninji.html">
+                        <img src="./picture/IMG_5454.jpeg" alt="建仁寺">
+                        <p>建仁寺</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./ryouanji/ryouanji.html">
+                        <img src="./picture/IMG_5408.jpeg" alt="龍安寺">
+                        <p>龍安寺</p>
+                    </a>
+                </div>
+            </div>
+            <button class="next" onclick="nextSlide()">›</button>
+        </div>
+        <footer>
+            <p>© 2024 京都観光案内</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
