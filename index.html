@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<title>Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="無題946_20240324115214.png ">
-	<link rel="stylesheet" href="style.css">
-	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>京都の観光名所と神社</title>
 </head>
 <body>
-	<header>
-		<nav class="pc-nav">
-			<ul>
-				<li><a href="servece.html">Servece</a></li>
-				<li><a href="#">Works</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<h1 class="profile-top">Profile</h1>
-		<div id="top">
-			<img src="無題946_20240324115214.png" alt="顔写真" class="image">
-	    <p class="introduction">
-			奥 修平と申します。<br>
-			現在、京都府在住27歳です。<br>
-			エンジニアの会社で働きながら副業として働いております。<br>
-			もし、ご縁がある方はよろしくお願い致します。
-		</p>
-	</div>
-       
-	   <h1 class="servce-top">Servece</h1>
-      
-
-	   <h1 class="works-top">Works</h1>
-
-
-	</main>
-	<footer id="footer">
-		<ul class="footer-pc">
-			<li><a href="servece.html">Servece</a></li>
-			<li><a href="#">Works</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		  </ul>
-		</nav>
-	</footer>
+    <div class="container">
+        <div class="video-content-container">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="./picture/IMG_5381.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content-container">
+                <header>
+                    <h1>京都の観光名所と神社</h1>
+                    <div class="menu-container">
+                        <div class="hamburger-menu" onclick="toggleMenu()">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <span class="menu-text">MENU</span>
+                    </div>
+                </header>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">ホームへ</a></li>
+                        <li><a href="./kihune/kihune.html">貴船神社</a></li>
+                        <li><a href="./rurikouin/rurikouin.html">瑠璃光院</a></li>
+                        <li><a href="./kinkakuji/kinkakuji.html">金閣寺</a></li>
+                        <li><a href="./ginkauji/ginkakuji.html">銀閣寺</a></li>
+                        <li><a href="./kenninji/kenninji.html">建仁寺</a></li>
+                        <li><a href="./ryouanji/ryouanji.html">龍安寺</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="slider">
+            <button class="prev" onclick="prevSlide()">‹</button>
+            <div class="slides-container">
+                <div class="slide">
+                    <a href="./kihune/kihune.html">
+                        <img src="./picture/IMG_5373.jpeg" alt="貴船神社">
+                        <p>貴船神社</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./rurikouin/rurikouin.html">
+                        <img src="./picture/IMG_5383.jpeg" alt="瑠璃光院">
+                        <p>瑠璃光院</a>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./kinkakuji/kinkakuji.html">
+                        <img src="./picture/IMG_5415.jpeg" alt="金閣寺">
+                        <p>金閣寺</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./ginkauji/ginkakuji.html">
+                        <img src="./picture/IMG_5417.jpeg" alt="銀閣寺">
+                        <p>銀閣寺</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./kenninji/kenninji.html">
+                        <img src="./picture/IMG_5454.jpeg" alt="建仁寺">
+                        <p>建仁寺</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="./ryouanji/ryouanji.html">
+                        <img src="./picture/IMG_5408.jpeg" alt="龍安寺">
+                        <p>龍安寺</p>
+                    </a>
+                </div>
+            </div>
+            <button class="next" onclick="nextSlide()">›</button>
+        </div>
+        <footer>
+            <p>© 2024 京都観光案内</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
